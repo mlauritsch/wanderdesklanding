@@ -1,5 +1,7 @@
+@import "landing_page";
+
 body {
-  background-image: image_url('landing_desk.jpg');
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), image_url('landing_desk.jpg');
   background-size: cover;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
