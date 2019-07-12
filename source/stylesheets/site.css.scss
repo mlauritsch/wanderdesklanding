@@ -18,16 +18,16 @@ a {
   }
 }
 
-@media (min-aspect-ratio: 16/9) {
-  #background-video {
-    width: 100%;
-  }
+#background-video {
+  position: relative;
+  z-index: 0;
+  filter: contrast(90%);
 }
 
-@media (max-aspect-ratio: 16/9) {
-  #background-video {
-    width: 100%;
-  }
+.content {
+  z-index: 1;
+  position: absolute;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
 }
 
 @media (max-width: 768px) {
@@ -44,5 +44,34 @@ a {
 
   .content {
     margin-top: 5em;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #background-video {
+    width: 100%;
+  }
+
+  .content {
+    top: 30%;
+    left: 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #background-video {
+    width: 100%;
+  }
+
+  .content {
+    top: 40%;
+    left: 26%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #background-video {
+    width: 100%;
   }
 }
