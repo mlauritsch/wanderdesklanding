@@ -6,7 +6,6 @@ body {
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  // padding: 18vh 1rem;
   text-align: center;
 }
 
@@ -16,6 +15,12 @@ a {
   &:focus,
   &:hover {
     color: rgba(#000, 0.6);
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #background-video {
+    width: 100%;
   }
 }
 
@@ -34,5 +39,10 @@ a {
     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), image_url('landing_desk.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 40vh 1rem;
+  }
+
+  .content {
+    margin-top: 5em;
   }
 }
